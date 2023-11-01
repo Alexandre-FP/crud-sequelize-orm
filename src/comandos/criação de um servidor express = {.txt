@@ -1,0 +1,31 @@
+criação de um servidor express = {
+   yarn init -y = criação do package.json
+   yarn add express = criar o servidor express
+   yarn add sucrase = para usar o import em vez de require: {
+    { // // para rodar o import de maneira correta, pasta criar um arquivo nodemon.json e colocar esse arquivo abaixo
+    "execMap": {
+        "js": "sucrase-node"
+    }                         
+}
+   }
+}
+    yarn add eslint -D = para padronização de código
+    yarn add sequelize -D = criação do sequelize dentro do projeto
+    yarn add sequelize-cli -D = criação programa de console ajuda de criação de models e comandos
+    criação de .sequelizerc na raiz do projeto
+    yarn add pg pg-hstore = instação do postgresql
+    yarn sequelize migration:create --name=create-customers = comando para criação de tabela
+    yarn sequelize db:migrate = para starta as minhas migrations e assim criar no banco de dados
+    yarn sequelize db:migrate:undo:all = comando para desfazer o que foi feito em relação de criação ou exclusão no banco de dados, e relação das minhas migrations
+    yarn sequelize db:migrate:undo = comando para desfazer o que foi na ultima migration
+    link para o githubpara comandos sequelize = https://github.com/sequelize/cli#documentation
+
+*************************************************************************************************
+
+1  - git init
+2  - git status
+3  - git add .
+4  - git commit -m "."
+5  - git branch -M main
+6  - git remote add origin "https://exemplo"
+7  - git push -u origin main
